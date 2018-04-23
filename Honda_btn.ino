@@ -27,9 +27,11 @@
    Sketch for SUPRA SFD-106U
 
    Tested on Honda Avancier TA2.
+
+   v1.1
 */
 
-#define RANGE_VOL_min a > 5 && a < 30 //range between 5 and 30 from analogRead() for VOL-
+#define RANGE_VOL_min a >= 0 && a < 30 //range between 0 and 30 from analogRead() for VOL-
 #define RANGE_VOL_plus a > 40 && a < 120
 #define RANGE_CH a > 130 && a < 270
 #define RANGE_FMAM a > 280 && a < 550
@@ -45,7 +47,7 @@
 #define VOL_ENCODER_A_PIN 2 //Simulated encoder of volume
 #define VOL_ENCODER_B_PIN 3
 
-#define DEBUG 1 // 0 - off, 1 - on
+#define DEBUG 0 // 0 - off, 1 - on output
 
 boolean _free = false;
 

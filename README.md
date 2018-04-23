@@ -28,7 +28,7 @@ This is sketch for SUPRA SFD-106U
 Communication occurs through transistors.
 KEY1 in plume closes to ground via resistor; for each button its a resistor.
 
-For simulate buttons:
+For simulate buttons: (github not showing normal, see local version)
 
 PIN -- (220 Ohm) -------------------- B 
 	    (+5 V) -- (RESISTOR N Ohm) -- C
@@ -41,3 +41,6 @@ For simulate power button, encoder:
 PIN -- (220 Ohm) -------------------- B 
 	    (+5 V)   -------------------- C
 	                                  E -- (10 Ohm) -- (GND)
+
+// v1.1
+Fixed bug: VOL- very small resistance, fix range.
